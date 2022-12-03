@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+<script>
+  
+  function add() {
+    var x = document.getElementById("result").value;
+    x++;
+    document.getElementById("result").value=x;
+  }
+  function sub() {
+    var x = document.getElementById("result").value;
+    x--;
+    document.getElementById("result").value=x;
+  }
+</script>
+<style>
+  body{
+    background-color: black;
+}
+td{
+    color: red;
+ 
+    }
+#table.center{
+  
+  padding-left: 10px;
+  padding-top: 250px;
+ } 
+ table{
+  padding-left: 10px;
+ }
+ 
+#div{
+  color: white;
+  text-align: justify;
+  height: 550px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+
+</style>
+	 
+</head>
+
+<body>
+  <div id="div">
+    
+    <center>
+    <table id="center">
+      <tr>
+        <h4 style="text-align:center; padding-top:200px;">ENTER AN NUMBER HERE </h4>
+        <h5 style="text-align:center;">press + the increase and - to decrease the value</h5>
+      </tr>
+    </table>
+      <table>
+      <tr>
+        <td colspan="2"><input type="number" id="result"/></td>
+      </tr>
+       <tr>
+        <td align="left"><button type="button" value="+" onclick="add()">+</button></td>
+        <td align="right"><button type="button" value="-" onclick="sub()">-</button></td>
+      </tr>
+    </div>
+  
+    </table>
+  </center>
+
+</body>
+
+</html>
